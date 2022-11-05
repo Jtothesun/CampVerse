@@ -28,11 +28,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `music` (
-  `id` int(11) NOT NULL,
+  `id` int NOT NULL AUTO_INCREMENT,
   `SongName` varchar(50) NOT NULL,
   `Uploader` varchar(100) NOT NULL,
   `Tag` varchar(50) NOT NULL,
   `UploadDate` date NOT NULL
+  PRIMARY KEY('id')
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -41,23 +42,16 @@ CREATE TABLE `music` (
 -- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+CREATE TABLE `Users` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `FirstName` varchar(100) NOT NULL,
   `LastName` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
   `UserName` varchar(10) NOT NULL,
   `Pass` varchar(8) NOT NULL,
-  `NumSongs` int(11) DEFAULT NULL
+  `NumSongs` int DEFAULT NULL
+  PRIMARY KEY('id')
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `FirstName`, `LastName`, `Email`, `UserName`, `Pass`, `NumSongs`) VALUES
-(0, '', '', '', '', '', NULL);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
