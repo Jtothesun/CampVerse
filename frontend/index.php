@@ -1,3 +1,17 @@
+<?php
+
+include '../includes/functions.php';
+
+if (isset(
+    $_POST['FirstName'],
+    $_POST['LastName'],
+    $_POST['username'],
+    $_POST['password'],
+    $_POST['Email']
+)) 
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
