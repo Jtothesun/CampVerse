@@ -1,0 +1,190 @@
+/* CSS Reset */
+body {
+    margin: 0;
+    padding: 0;
+}
+/* navigation bar */
+
+nav {
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav-brand {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #47B5FF;
+    font-size: 1.1rem;
+    padding: 10px;
+    align-items: center;
+}
+
+nav p {
+    margin: 0;
+}
+
+nav p:hover{
+    color: #665A48;
+}
+
+.img-logo{
+    height: 45px;
+    width: 55px;
+    padding-right: 15px;
+}
+
+.login {
+    padding: 20px;
+}
+
+/* body */
+body {
+    text-align: center;
+}
+
+.main {
+    background-color: #98A8F8;
+}
+
+h3.heading {
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding: 2rem 5rem;
+}
+
+.side-img {
+    height: 300px;
+    width: 300px;
+    margin: 2rem;
+}
+
+.text-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-start {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    padding: 10px 0;
+}
+
+/* form */
+
+.signup-form {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    height: auto;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.inline-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-item{
+    margin: 1rem;
+    width: 100%;
+}
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #8EC3B0;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+footer ul a {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+
+footer i:hover{
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    /* fix media query bug */
+    .inline-form {
+        display: block;
+    }
+
+    .email {
+        width: 100%;
+    }
+
+
+}
+
+
+/* profile.html styling */
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 300px, 300px, 300px, 300px;
+    grid-template-areas: "side search"
+                         "side search"
+                         "side add" 
+                         "side add"  ;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.search-song{
+    grid-area: search;
+}
+
+.add-song{
+    grid-area: add;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.song-search-input{
+    width: 70%;
+}
+
+.profile-h3{
+    display: block;
+    text-align: center;
+}
+
+
