@@ -109,7 +109,7 @@ h3.heading {
 
 /* footer */
 footer {
-    background-color: #8EC3B0;
+    background-color: #B9E0FF;
     color: whitesmoke;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -127,9 +127,14 @@ footer ul {
     margin-bottom: 0;
 }
 
+ul li.names{
+    display: inline-block;
+    padding: 1rem 1.1rem;
+    color: #395144;
+}
 
 footer i:hover{
-    color: white;
+    color: #00ABB3;
 }
 
 @media screen and (max-width: 600px){
@@ -151,23 +156,33 @@ footer i:hover{
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 10fr;
-    grid-template-rows: 300px, 300px, 300px, 300px;
+    grid-template-rows: 600px, 600px, 300px, 300px;
     grid-template-areas: "side search"
                          "side search"
                          "side add" 
                          "side add"  ;
+    padding: 2rem;
+    border-radius: 10px;
+    border: 3pt solid red;
 }
 
 .sidebar {
     grid-area: side;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 2rem 0;
 }
 
 .search-song{
     grid-area: search;
+    background-color: #B9E0FF;
+    border-radius: 10px;
 }
 
 .add-song{
     grid-area: add;
+    background-color: #FF9F9F;
+    border-radius: 10px;
 }
 
 .flex-box {
@@ -175,6 +190,7 @@ footer i:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
 }
 
@@ -185,6 +201,29 @@ footer i:hover{
 .profile-h3{
     display: block;
     text-align: center;
+    padding: 2rem;
 }
+
+.main-grid .sidebar a {
+    text-decoration: none;
+    color:#665A48;
+    font-weight: bold;
+}
+
+.main-grid .sidebar a:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    .main-grid {
+        grid-template-areas: "search search"
+                            "add add"
+                            "side side";
+    }
+}
+
+/* songs.html Styling */
+
+
 
 

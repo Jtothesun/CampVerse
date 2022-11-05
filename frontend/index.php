@@ -89,10 +89,10 @@ if (isset(
     <footer>
         <ul>
             <li><a href="https://github.com/Jtothesun/CampVerse"><i class="fa-brands fa-github"></i></a></li>
-            <li>Saketh</li>
-            <li>Baara</li>
-            <li>Jason</li>
-            <li>Arshal</li>
+            <li class = "names">Saketh</li>
+            <li class = "names">Baara</li>
+            <li class = "names">Jason</li>
+            <li class = "names">Arslan</li>
         </ul>
     </footer>
 </body>
