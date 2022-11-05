@@ -8,15 +8,15 @@ Careated by Baraa, Jason, Saketh, Arsalan
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 <!-- [![MIT License][license-shield]][license-url] -->
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url]
+ -->
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/Jtothesun/CampVerse/">
-    <img src="https://cdn-icons-png.flaticon.com/512/8210/8210651.png" alt="Logo" width="80" height="80">
+    <img src="https://media.istockphoto.com/vectors/black-cats-head-with-headphones-icon-isolated-on-white-tough-cool-tom-vector-id1276562891?k=20&m=1276562891&s=612x612&w=0&h=AkXMr3zEzEFa-SwQwEx0Lj8nmFeS6-tQaAed0WeCLnM=" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">CampVerse Website</h3>
