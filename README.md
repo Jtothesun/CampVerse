@@ -180,7 +180,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Some other sources that helped me build this project:
 
-*
+*  https://mixkit.co/free-sound-effects/nature/ - downloaded sounds from this site
 * 
 * 
 
