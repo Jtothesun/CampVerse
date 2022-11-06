@@ -65,7 +65,10 @@ if (isset($_POST["submit"])){
         </div>
         <div>
             <div class = "nav-brand login"><p><a style="text-decoration: none;" href="login.html">Log in</a></p></div>
+
         </div>
+        <div class = "nav-brand login"><p><a style="text-decoration: none;" href="viewSong.html">Sounds</a></p></div>
+
     </nav>
 
     <main>
