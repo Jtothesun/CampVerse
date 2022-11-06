@@ -100,19 +100,11 @@ Why?
 
 <!-- GETTING STARTED -->
 ## Getting Started
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
+visit http://camp-verse.tech/
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
-DESCRIPTION DESCRIPTION DESCRIPTION
+We wanted to do something along the lines of camping, so we figured people go camping to escape from the real world, so we wanted to bring to transfer some of the camp experience virtually. We wanted to let people hear the ambiance audios of the world.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -124,14 +116,14 @@ DESCRIPTION DESCRIPTION DESCRIPTION
 
 - [x] Decide on idea
 - [x] Add README.md
-- [ ] Build front-end
-  - [ ] Overall fundementals
-  - [ ] 
+- [x] Build front-end
+  - [x] Overall fundementals
+ 
 - [ ] Backened
-  - [ ] Draw Diagrams
-- [ ] Domains
-  - [ ] get a domain
-  - [ ] host the domain 
+  -  [x] Draw Diagrams
+-  [x] Domains
+  - [x] get a domain
+  - [x] host the domain 
 
 Check out [open issues](https://github.com/Jtothesun/CampVerse/issues) to see any proposed features AKA issues.
 
