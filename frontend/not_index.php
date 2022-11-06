@@ -36,8 +36,8 @@ if (isset($_POST["submit"])){
     //     'Email-address' => $email
     // ));
 
-    echo $sql;
-    echo '<br>';
+    // echo $sql;
+    // echo '<br>';
     // echo"<script>alert ('Data inserted Successfully')</script>";
 
     // mysqli_query($conn,$sql)

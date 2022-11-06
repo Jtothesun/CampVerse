@@ -1,16 +1,44 @@
 <?php
-
 include '../includes/functions.php';
+// $pdo = get_database_connection();
 
-if (isset(
-    $_POST['FirstName'],
-    $_POST['LastName'],
-    $_POST['username'],
-    $_POST['password'],
-    $_POST['Email']
-)) 
+$conn = mysqli_connect("localhost","root","","campverse");
+
+if(!$conn){
+    die("Connection failed: " . mysqli_connect_error());
+
+}
+// echo "Connected successfully <br>";
+
+if (isset($_POST["submit"])){
+    $first=     $_POST['firs-tname'];
+    $last=      $_POST['Last-name'];
+    $username=  $_POST['username'];
+    $password=  $_POST['Pass-word'];
+    $email=     $_POST['Email-address'];
+}
+    // $_POST['phone-number']
+
+    $hash = password_hash($password, PASSWORD_DEFAULT);
+
+    $sql = "INSERT INTO blah Values('','$first','$last','$username','$email','$hash',0)";
+
+    mysqli_query($conn,$sql);
+
+
+    // echo $sql;
+    // echo '<br>';
+    // echo"<script>alert ('Data inserted Successfully')</script>";
+
+    // mysqli_query($conn,$sql)
+    // Close database connection.
+    // $conn = null;
+
+
 
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,12 +83,12 @@ if (isset(
         </div>
         
         <div class="container-fluid signup-form">
-            <form action="">
+            <form action="" method="POST">
             
                     <div class = "inline-form">
-                        <input  type="text" class="form-control input-item" placeholder="First name" aria-label="First name">
+                        <input  type="text" class="form-control input-item" name= "firs-tname" placeholder="First name" aria-label="First name">
                   
-                        <input  type="text" class="form-control input-item" placeholder="Last name" aria-label="Last name">
+                        <input  type="text" class="form-control input-item" name="Last-name" placeholder="Last name" aria-label="Last name">
                 
                     </div>
                     
@@ -70,18 +98,19 @@ if (isset(
 
             
                     <div class ="inline-form">
-                        <input type="text" class="form-control input-item" placeholder="U$eRn@mE" aria-label="username">                
-                        <input type="password" class="form-control input-item" placeholder="Password" aria-label="password">
+                        <input type="text" class="form-control input-item" name="username" placeholder="U$eRn@mE" aria-label="username">                
+                        <input type="password" class="form-control input-item" name="Pass-word"placeholder="Password" aria-label="password">
                     </div>
                     
             
 
             
                 <div class="inline-form">
-                    <input type="email" class="form-control input-item email" placeholder="Email" aria-label="Email">
+                    <input type="email" class="form-control input-item email" name="Email-address" placeholder="Email" aria-label="Email">
                 </div>
             
-                <button class="song-upload" type="submit">Sign Up</button>
+                <input type="submit" name="submit" value="submit">
+                <!-- <button class="song-upload" type="submit">Sign Up</button> -->
 
             </form>
             
