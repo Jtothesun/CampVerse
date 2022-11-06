@@ -290,6 +290,88 @@ button {
     }
 }
 
+/* viewSong.html Styling */
+
+
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.grid-box {
+    display: grid;
+    padding: 1.3rem;
+    
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas: "one one four five"
+                         "two three four six"
+                         "seven eight nine six"
+                         "seven ten ten ten"   ;
+}
+
+.grid-item {
+    background-color: royalblue;
+    border-radius: 10px;
+    
+}
+
+@media screen and (max-width: 600px){
+    .grid-box{
+        display: block;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1092px){
+    .grid-box {
+        text-align: center;
+        margin:  0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px 200px 200px 200px;
+        grid-template-areas: "one two three"
+                            "four four seven"
+                            "five six seven"
+                            "eight nine ten";
+        padding: 0.8rem;
+    }
+}
 
 
 
