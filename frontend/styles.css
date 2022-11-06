@@ -167,22 +167,28 @@ footer i:hover{
 }
 
 .sidebar {
+    display: flex;
     grid-area: side;
     background-color: antiquewhite;
     border-radius: 10px;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-song{
     grid-area: search;
     background-color: #B9E0FF;
     border-radius: 10px;
+    padding-bottom: 2rem;
 }
 
 .add-song{
     grid-area: add;
     background-color: #FF9F9F;
     border-radius: 10px;
+    padding-bottom: 1.4rem;
 }
 
 .flex-box {
@@ -195,7 +201,8 @@ footer i:hover{
 }
 
 .song-search-input{
-    width: 70%;
+    width: 60%;
+    margin: 1.1rem;
 }
 
 .profile-h3{
@@ -214,6 +221,28 @@ footer i:hover{
     color: blue;
 }
 
+.form-select {
+    width: 60%;
+    margin: 1.1rem;
+}
+
+.song-upload {
+    background-color: #1746A2;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    
+}
+
+.song-upload:hover{
+    background-color: blue;
+}
+
 @media screen and (max-width: 600px) {
     .main-grid {
         grid-template-areas: "search search"
@@ -222,7 +251,46 @@ footer i:hover{
     }
 }
 
-/* songs.html Styling */
+/* login.html Styling */
+
+.login-screen {
+    display: flex;
+    flex-direction: column;
+    height: calc( 100vh - 80px );
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+    padding: 2rem;
+
+}
+
+button {
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width: 600px){
+    .login-box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .login-box{
+        width: 80%;
+    }
+}
+
+
 
 
 

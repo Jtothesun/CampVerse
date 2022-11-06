@@ -42,6 +42,7 @@
                 <p><a href="">Construction</a></p>
                 <p><a href="">RainFall</a></p>
             </div>
+            <form action="">
             <div class = "search-song flex-box">
                 <h3 class = "profile-h3">Search a song</h3>
                 <input type="text" class="form-control song-search-input" id="formGroupExampleInput" placeholder="Song Name">
@@ -49,7 +50,29 @@
             </div>
             <div class = "add-song flex-box">
                 <h3 class="profile-h3">Add Song</h3>
+                <input type="text" class="form-control song-search-input" id="formGroupExampleInput" placeholder="Sound Name">
+                <select class="form-select" aria-label="Sound Category">
+                    <option selected>Open this select menu</option>
+                    <option value="1">WildLife</option>
+                    <option value="2">Water</option>
+                    <option value="3">Wind</option>
+                    <option value="4">Crickets</option>
+                    <option value="5">Leaves</option>
+                    <option value="6">Fire</option>
+                    <option value="7">Water Falls</option>
+                    <option value="8">Writing</option>
+                    <option value="9">Crowded Places</option>
+                    <option value="10">Traffic</option>
+                    <option value="11">Construction</option>
+                    <option value="12">RainFall</option>
+                    
+                  </select>
+
+
                 <input type="file" style="width:200px;">
+
+                <button class = "song-upload" type="submit">Upload Song</button>
+            </form>
             </div>
         </section>
     </main>

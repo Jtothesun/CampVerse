@@ -36,7 +36,7 @@ if (isset(
             <p>CampVerse</p>
         </div>
         <div>
-            <div class = "nav-brand login"><p>Login</p></div>
+            <div class = "nav-brand login"><p><a style="text-decoration: none;" href="login.html">Log in</a></p></div>
         </div>
     </nav>
 
@@ -55,6 +55,7 @@ if (isset(
         </div>
         
         <div class="container-fluid signup-form">
+            <form action="">
             
                     <div class = "inline-form">
                         <input  type="text" class="form-control input-item" placeholder="First name" aria-label="First name">
@@ -80,6 +81,9 @@ if (isset(
                     <input type="email" class="form-control input-item email" placeholder="Email" aria-label="Email">
                 </div>
             
+                <button class="song-upload" type="submit">Sign Up</button>
+
+            </form>
             
         </div>
 
